@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">InternshipProgram</string>
+    <string name="app_name">DigiLocker</string>
+    <string name="logo">"digilocker logo "</string>
+    <string name="issued">Your Issued Documents</string>
+    <string name="get">GET</string>
+    <string name="use_digilocker">Where can I use DigiLocker?</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_browse">Browse</string>
+    <string name="title_account">Account</string>
+    <string name="announcements">Announcements</string>
+    <string name="indian_railway_message">Indian Railways now accept digital Aadhaar and Driving License from DigiLocker as valid ID proof</string>
+    <string name="marksheets_announcement">Class X and XII Mark Sheets and Passing Certificates of Maharashtra State Board of Secondary and Higher Secondary Education are available in DigiLocker.</string>
+    <string name="notifications">notifications</string>
+    <string name="greet">Welcome, Anurag!</string>
+    <string name="declaration">DigiLocker \'Issued Documents\' are at par with the original Documents as per IT Act 2000.</string>
+    <string name="aadhaar_card">Aadhaar Card</string>
+    <string name="also_get_these">Also get these</string>
+    <string name="driving_license">Driving License</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="vehicle_registration">Vehicle Registration</string>
+    <string name="airport_announcement">Digilocker is accepted on all the airports across India under the AAI notifiation</string>
+    <string name="read_more">Read More</string>
 </resources>

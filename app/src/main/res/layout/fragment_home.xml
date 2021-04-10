@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!--            Logo and Notification bell button-->
+
+    <RelativeLayout
+        android:id="@+id/headerBarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:foregroundGravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/batteryImageView"
+            android:layout_width="129dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/digilocker_logo" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background"
+            android:contentDescription="@string/notifications"
+            android:src="@drawable/ic_baseline_notifications_24"/>
+
+
+    </RelativeLayout>
+
+    <!--            Welcome message-->
+    <TextView
+        android:id="@+id/greetUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="@string/greet"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--            Digilocker declaration message-->
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/declaration"
+        android:textSize="14sp" />
+
+    <!--            Issued Document list text-->
+    <TextView
+        android:id="@+id/issuedDocuments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/issued"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:textStyle="bold" />
+
+    <!--            Aadhaar card relative layout button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="2dp"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/test_button_image"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/aadhaar_logo"
+            android:contentDescription="@string/aadhaar_card" />
+
+        <TextView
+            android:id="@+id/test_button_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/test_button_image"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/test_button_image"
+            android:padding="6dp"
+            android:paddingStart="17dp"
+            android:text="@string/aadhaar_card"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:hapticFeedbackEnabled="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </RelativeLayout>
+
+    <!--            More to fetch Document list text-->
+    <TextView
+        android:id="@+id/getDocumentsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/also_get_these"
+        android:textSize="16sp"
+        android:paddingTop="20dp"/>
+
+    <!--           Driving licence relative layout button -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="1dp"
+        android:backgroundTint="#fafafa"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/test_button_image1"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/emblem_logo"
+            android:contentDescription="@string/driving_license" />
+
+        <TextView
+            android:id="@+id/test_button_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/test_button_image1"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/test_button_image1"
+            android:padding="6dp"
+            android:paddingStart="17dp"
+            android:text="@string/driving_license"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#fafafa"
+            android:gravity="center_vertical"
+            android:text="@string/get"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#643bfc"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <!--           PAN Card relative layout button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="1dp"
+        android:backgroundTint="#fafafa"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/test_button_image2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/emblem_logo"
+            android:contentDescription="@string/pan_card" />
+
+        <TextView
+            android:id="@+id/test_button_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/test_button_image2"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/test_button_image2"
+            android:padding="6dp"
+            android:paddingStart="17dp"
+            android:text="@string/pan_card"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#fafafa"
+            android:gravity="center_vertical"
+            android:text="@string/get"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#643bfc"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <!--           Vehicle Registration relative layout button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="1dp"
+        android:backgroundTint="#fafafa"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/test_button_image3"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/emblem_logo"
+            android:contentDescription="@string/vehicle_registration" />
+
+        <TextView
+            android:id="@+id/test_button_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/test_button_image3"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/test_button_image3"
+            android:padding="6dp"
+            android:paddingStart="17dp"
+            android:text="@string/vehicle_registration"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#fafafa"
+            android:gravity="center_vertical"
+            android:text="@string/get"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#643bfc"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <!--            Other uses of digi locker list text-->
+    <TextView
+        android:id="@+id/useDigiLocker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/use_digilocker"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:textStyle="bold" />
+
+    <!--  Horizontally Scrollable Cards-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="320dp"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginStart="3dp"
+                       android:layout_marginTop="3dp"
+                       android:layout_marginEnd="3dp"
+                       android:layout_marginBottom="3dp"
+                       android:background="@drawable/rounded_corners"
+                       android:elevation="3dp"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="150dp"
+                           android:src="@drawable/plane"
+                           android:contentDescription="@string/airport_announcement" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentBottom="true"
+                           android:padding="5dp"
+                           android:text="@string/airport_announcement" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:backgroundTint="#fafafa"
+                           android:gravity="bottom"
+                           android:paddingStart="5dp"
+                           android:text="@string/read_more"
+                           android:textColor="#643bfc"
+                           android:textSize="14sp"
+                           tools:ignore="RtlSymmetry" />
+                   </LinearLayout>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/rounded_corners"
+                    android:elevation="3dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/plane"
+                        android:contentDescription="@string/airport_announcement" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:padding="5dp"
+                        android:text="@string/airport_announcement" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fafafa"
+                        android:gravity="bottom"
+                        android:paddingStart="5dp"
+                        android:text="@string/read_more"
+                        android:textColor="#643bfc"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/rounded_corners"
+                    android:elevation="3dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/plane"
+                        android:contentDescription="@string/airport_announcement" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:padding="5dp"
+                        android:text="@string/airport_announcement" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fafafa"
+                        android:gravity="bottom"
+                        android:paddingStart="5dp"
+                        android:text="@string/read_more"
+                        android:textColor="#643bfc"
+                        android:textSize="14sp"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Announcements -->
+    <TextView
+        android:id="@+id/announcements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/announcements"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="1dp"
+        android:backgroundTint="#fafafa">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fafafa"
+            android:text="@string/indian_railway_message"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+<!--   Marksheet Announcement -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="1dp"
+        android:backgroundTint="#fafafa">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fafafa"
+            android:text="@string/marksheets_announcement"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
